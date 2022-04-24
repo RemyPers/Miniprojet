@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body {
+	margin: 0;
+	padding:0;
+	background-color: #079992;
+	font-family: 'Open Sans', sans-serif;
+}
+#site {
+	width: 80%;
+	margin: auto;
+	border: 1px solid #030;
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-areas:
+		"header header header"
+		"nav article aside"
+		"footer footer footer";
+}
+header {
+	grid-area: header;
+	background-color: #60a3bc;
+	text-align: center;
+}
+nav {
+	grid-area: nav;
+	background-color: #82ccdd;
+}
+aside {
+	grid-area: aside;
+	background-color: #82ccdd;
+}
+ul {
+	margin: 0;
+	padding:0;	
+}
+ul li {
+	list-style: none;
+	padding: 20px;
+}
+ul li:hover {
+	background-color: #930;
+}
+ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 17px;
+}
+article {
+	grid-area: article;
+	background-color: #fff;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+article h1, article h4, aside h1 {
+	text-align: center;
+}
+.lien {
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+}
+.lien:hover {
+	color: #00f;
+	text-decoration: underline;
+}
+
+
+
+input[type='text'], input[type='password'], textarea[name='description'] {
+	width: 100%;
+	padding: 15px;
+}
+textarea[name='article'] {
+	width: 100%;
+	padding: 15px;
+	height: 100px;
+}
+
+
+
+.submit {
+	width: 80%;
+	padding: 15px;
+	font-size: 30px;
+	background-color: #F90;
+	border: none;
+	cursor: pointer;
+}
+
+.desactive {
+	width: 80%;
+	padding: 15px;
+	font-size: 30px;
+	background-color: rgb(197, 197, 197);
+	border: none;
+	cursor: pointer;
+}
+
+
+input[type='submit']:hover {
+	background-color: #F60;
+}
+.red {
+	color: red;
+}
+.green {
+	color: #060;
+}
+footer {
+	grid-area: footer;
+	background-color: #3c6382;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.affichage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+ol {
+	list-style: none;
+}
+
+
+.infos {
+	display: inline;
+	padding-bottom: 15px;
+}
+
+
+
+
+
+aside li {
+	text-align: center;
+}
+
+.recettes {
+	margin-top: 30px;
+}
+
+.recettes li {
+	margin-top: 30px;
+}
+
+section {
+	grid-area: article;
+	background-color: #fff;
+	text-align: center;
+}
+
+
+
+
+
+
+@media screen and (max-width: 850px) {
+#site {
+	width: 90%;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+		"header"
+		"nav"
+		"article"
+		"footer";
+}
+ul {
+	display: flex;	
+	justify-content: center;
+	align-content: center;
+}	
+}
+
+
+
+
+

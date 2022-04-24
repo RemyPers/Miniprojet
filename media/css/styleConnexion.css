@@ -1,0 +1,224 @@
+/* */
+
+body {
+    background-color: rgba(230, 230, 230, 0.726);
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+#content {
+    margin-top: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#backk {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: red;
+    background-color: blue;
+    width: 100%;
+
+}
+
+#mainContent {
+
+
+    width: 50vw;
+    background-color: white;
+    display: flex;
+}
+
+.titre {
+    margin-bottom: 1vw;
+    font-size: 30px;
+}
+
+.authentification {
+
+    width: 50vw;
+    height: 1vw;
+    background-color: #FFF3CD;
+    color: #856404;
+    border-radius: 5px;
+    display: none;
+    align-items: center;
+}
+
+.formInput {
+    border: 0.5px solid red;
+    border-radius: 3px;
+    height: 30px;
+    background-color: #E9ECEF;
+    margin-top: 1%;
+}
+
+
+input:focus {
+    outline: none;
+}
+
+.formInputDone {
+    border-radius: 3px;
+    height: 30px;
+    background-color: #E9ECEF;
+    margin-top: 1%;
+    border: 0.5px solid #E9ECEF;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1vw;
+}
+
+
+::placeholder {
+    color: #6C758B;
+    font-size: 1em;
+    padding-left: 2%;
+
+}
+
+#identifiants {
+    padding-left: 1vw;
+    width: 50%;
+ 
+}
+
+#aide {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.liens {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.lienAide {
+    margin-top: 0.3vw;
+    display: flex;
+    align-items: center;
+    color: #007BFF;
+
+}
+
+.message {
+    margin-top: 1.5vw;
+    width: 80%;
+    height: 20%;
+    background-color: #E2E3E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    line-height: 20px;
+}
+
+.message > div {
+    width: 85%;
+
+}
+
+.icones {
+    width: auto;
+    max-height: 15px;
+
+}
+
+p {
+    padding-left: 0.5vw;
+    margin: 0;
+    font-size: 12px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+#btns {
+    display: flex;
+    margin-bottom: 1vw;
+
+
+
+}
+
+.btn {
+    margin-left: 5px;
+    width: 75px;
+    height: 35px;
+    background-color: #007BFF;
+    border-radius: 3px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.styleToucheNb {
+    margin-right: 5px;
+    height: 20%;
+    width: 20%;
+
+    background-color: #CCCCCC;
+}
+
+.styleToucheVide {
+    margin-right: 5px;
+    height: 20%;
+    width: 20%;
+    border: 1px solid black;
+    background-color: #DDDDDD;
+}
+
+
+@media screen and (max-width: 800px) {
+    * {
+      font-size: 10px;
+      
+    }
+    #mainContent {
+
+
+        width: 50vw;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #identifiants {
+        padding-left: 1vw;
+        width: 90%;
+     
+    }
+
+    #aide {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 2vw;
+    }
+
+    .authentification {
+        height: 35px;
+    }
+  }
+
+
+
